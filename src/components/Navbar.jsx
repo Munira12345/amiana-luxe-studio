@@ -2,10 +2,13 @@ import { Link } from "react-router-dom"
 
 function Navbar() {
   return (
-    <nav>
-      <Link to="/">AMIANA</Link>
+    <nav className="navbar">
+      <Link to="/" className="logo">
+        AMIANA
+        <span>LUXE STUDIO</span>
+      </Link>
 
-      <div>
+      <div className="nav-links">
         <Link to="/">Home</Link>
         <Link to="/services">Services</Link>
         <Link to="/packages">Packages</Link>
@@ -14,7 +17,7 @@ function Navbar() {
         <Link to="/shop">Shop</Link>
       </div>
 
-      <Link to="/booking">
+      <Link to="/booking" className="nav-button">
         Book Appointment
       </Link>
     </nav>

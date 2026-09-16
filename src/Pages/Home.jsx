@@ -2,27 +2,41 @@ function Home() {
   return (
     <main>
       <section className="hero">
-        <p className="eyebrow">AMIANA LUXE STUDIO</p>
+        <div className="hero-content">
+          <p className="eyebrow">AMIANA LUXE STUDIO</p>
 
-        <h1>
-          Your Radiance,
-          <br />
-          Restored.
-        </h1>
+          <h1>
+            Your Radiance,
+            <br />
+            <span>Restored.</span>
+          </h1>
 
-        <p>
-          Premium beauty services designed to help you look
-          and feel like your best self.
-        </p>
+          <p className="hero-description">
+            Premium beauty services designed to help you
+            look and feel like your best self.
+          </p>
 
-        <div>
-          <button>Book Appointment</button>
-          <button>Explore Services</button>
+          <div className="hero-actions">
+            <button className="primary-button">
+              Book Appointment
+            </button>
+
+            <button className="secondary-button">
+              Explore Services
+            </button>
+          </div>
+        </div>
+
+        <div className="hero-image">
+          <div className="image-placeholder">
+            AMIANA
+          </div>
         </div>
       </section>
 
-      <section>
+      <section className="experience">
         <p className="eyebrow">THE AMIANA EXPERIENCE</p>
+
         <h2>Beauty, curated around you.</h2>
 
         <p>
