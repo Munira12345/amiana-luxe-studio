@@ -33,29 +33,34 @@ const packages = [
 
 function Packages() {
   return (
-    <main>
-      <section>
+    <main className="packages-page">
+      <section className="page-header packages-header">
         <p className="eyebrow">CURATED EXPERIENCES</p>
 
         <h1>Beauty Packages</h1>
 
         <p>
-          More beauty. More value. One beautifully curated experience.
+          More beauty. More value. One beautifully curated
+          experience.
         </p>
       </section>
 
-      <section>
+      <section className="packages-grid">
         {packages.map((pkg) => (
-          <article key={pkg.name}>
-            <p>{pkg.name}</p>
+          <article className="package-card" key={pkg.name}>
+            <p className="package-name">{pkg.name}</p>
 
-            <h2>{pkg.price}</h2>
+            <div className="package-price">
+              {pkg.price}
+            </div>
 
-            <p>{pkg.services}</p>
+            <p className="package-services">
+              {pkg.services}
+            </p>
 
-            <small>{pkg.saving}</small>
-
-            <br />
+            <span className="package-saving">
+              {pkg.saving}
+            </span>
 
             <button>Book Package</button>
           </article>
