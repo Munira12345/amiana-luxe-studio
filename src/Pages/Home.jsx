@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function Home() {
   return (
     <main>
@@ -17,10 +19,9 @@ function Home() {
           </p>
 
           <div className="hero-actions">
-            <button className="primary-button">
-              Book Appointment
-            </button>
-
+            <Link to="/booking" className="primary-button">
+               Book Appointment
+             </Link>
             <button className="secondary-button">
               Explore Services
             </button>

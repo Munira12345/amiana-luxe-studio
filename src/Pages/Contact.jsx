@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function Contact() {
   return (
     <main className="contact-page">
@@ -50,7 +52,9 @@ function Contact() {
 
         <h2>Your next beauty experience starts here.</h2>
 
-        <button>Book Appointment</button>
+            <Link to="/booking" className="contact-cta-button">
+        Book Appointment
+      </Link>
       </section>
     </main>
   )
