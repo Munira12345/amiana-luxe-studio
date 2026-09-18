@@ -734,3 +734,151 @@ BOOOKING PAGE CSS
   background-color: var(--gold);
   color: var(--black);
 }
+
+/* =========================
+   AUTHENTICATION
+   ========================= */
+
+.auth-page {
+  min-height: 100vh;
+  padding: 80px 8%;
+  background-color: var(--black);
+  color: var(--ivory);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 520px;
+  padding: 60px;
+  border: 1px solid rgba(201, 164, 92, 0.35);
+  background-color: #101012;
+}
+
+.auth-brand {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.auth-brand p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.auth-brand span {
+  display: block;
+  margin-top: 5px;
+  color: var(--gold);
+  font-size: 0.55rem;
+  letter-spacing: 0.3em;
+}
+
+.auth-header {
+  margin-bottom: 40px;
+}
+
+.auth-header h1 {
+  font-size: clamp(3.5rem, 7vw, 5rem);
+  line-height: 0.9;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+
+.auth-header h1 span {
+  color: var(--gold);
+  font-style: italic;
+}
+
+.auth-header > p:last-child {
+  max-width: 430px;
+  margin-top: 1.5rem;
+  color: var(--silver);
+  line-height: 1.7;
+}
+
+.auth-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.auth-form .form-group label {
+  color: var(--ivory);
+}
+
+.auth-form input {
+  background-color: transparent;
+  border-color: #444;
+  color: var(--ivory);
+}
+
+.auth-form input::placeholder {
+  color: #777;
+}
+
+.auth-form input:focus {
+  border-color: var(--gold);
+}
+
+.auth-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: -0.3rem 0 2rem;
+  font-size: 0.75rem;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--silver);
+}
+
+.remember-me input {
+  width: auto;
+  accent-color: var(--gold);
+}
+
+.auth-options a {
+  color: var(--gold);
+}
+
+.auth-submit {
+  width: 100%;
+  padding: 16px;
+  background-color: var(--gold);
+  color: var(--black);
+  border: 1px solid var(--gold);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.auth-submit:hover {
+  background-color: transparent;
+  color: var(--gold);
+}
+
+.auth-footer {
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid #333;
+  text-align: center;
+}
+
+.auth-footer p {
+  color: var(--silver);
+  font-size: 0.8rem;
+}
+
+.auth-footer a {
+  color: var(--gold);
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
